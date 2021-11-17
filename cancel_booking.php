@@ -45,7 +45,7 @@ if (isset($_GET['bookID']) && is_numeric($_GET['bookID'])) {//Display the entry 
     $r = mysqli_query($dbc, $query); // Execute the query.
     //Report on the result:
     if (mysqli_affected_rows($dbc) == 1) {
-        print '<p>The blog entry has been deleted.</p>';
+        print '<p>The booking entry has been deleted.</p>';
     } else {
         print '<p style="color: red;">Could not delete the blog entry because:<br>' . mysqli_error($dbc) . '</p><p>The query being run was: ' . $query . '</p>';
     }
